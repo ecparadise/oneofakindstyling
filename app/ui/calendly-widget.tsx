@@ -19,7 +19,7 @@ export default function CalendlyWidget() {
           url="https://calendly.com/abbeyfodor/30min"
           onModalClose={() => setIsOpen(false)}
           open={isOpen}
-          rootElement={document.body}
+          rootElement={document?.body}
         />
       </div>
     </>
