@@ -15,12 +15,14 @@ export default function CalendlyWidget() {
         >
           Book here!
         </Button>
-        <PopupModal
-          url="https://calendly.com/abbeyfodor/30min"
-          onModalClose={() => setIsOpen(false)}
-          open={isOpen}
-          rootElement={document?.body}
-        />
+        {typeof window !== "undefined" && (
+          <PopupModal
+            url="https://calendly.com/abbeyfodor/30min"
+            onModalClose={() => setIsOpen(false)}
+            open={isOpen}
+            rootElement={document.body}
+          />
+        )}
       </div>
     </>
   )
