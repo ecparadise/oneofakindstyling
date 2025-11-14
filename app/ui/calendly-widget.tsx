@@ -13,7 +13,7 @@ export default function CalendlyWidget() {
           className="fixed right-5 bottom-20 z-[9998] rounded-full bg-black text-white p-6 font-semibold"
           onClick={() => setIsOpen(true)}
         >
-          Book here!
+          Book consult here!
         </Button>
         {typeof window !== "undefined" && (
           <PopupModal
