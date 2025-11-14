@@ -1,27 +1,12 @@
 export const customerTestimony = [
   {
-    name: "Alyssa S",
+    name: "Eliza P.",
     feedback:
-      "One of a Kind Styling transformed my wardrobe! I felt confident and stylish after just one session.",
+      "I love working with Abbey! She has the best eye for fashion. I booked a closet consult to prepare for an upcoming trip and she was so helpful. She encouraged me to finally get rid of old clothes and gave me inspiration for how to style pieces and craft a capsule wardrobe! Thanks to her I had so many cute outfits while I was traveling!",
   },
   {
-    name: "Brian M",
+    name: "Anonymous",
     feedback:
-      "Abbey has an incredible eye for fashion. She helped me find pieces that truly reflect my personality.",
-  },
-  {
-    name: "Catherine L",
-    feedback:
-      "The Seasonal VIP Member package is worth every penny. Unlimited styling for 90 days kept my wardrobe fresh!",
-  },
-  {
-    name: "David R",
-    feedback:
-      "I was hesitant at first, but the Store Session With Prep was a game-changer. I now love shopping!",
-  },
-  {
-    name: "Emily T",
-    feedback:
-      "Consulting with Abbey and getting digital visuals made outfit planning so much easier for me.",
+      "Abbey was able to assess my style and offered me great options. She was generous with her time, creative with her suggestions, energetic, and congenial. Highly recommend her services.",
   },
 ];
