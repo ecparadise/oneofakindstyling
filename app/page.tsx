@@ -1,9 +1,9 @@
 import { description } from "./constants/one-of-a-kind";
 import Image from "next/image";
 import clothes from './assets/clothes.jpg';
+import { renderFormattedParagraphs } from "./helpers/paragraph-formatter";
 
 export default function Home() {
-  const paragraphs = description.split("\n");
   return (
     <>
       <div className="flex flex-col items-center gap-6 text-center">
@@ -17,11 +17,7 @@ export default function Home() {
         <h1 className="leading-10 tracking-tight text-black dark:text-zinc-50">
           One of a Kind Styling
         </h1>
-        {paragraphs.map((para, index) => (
-          <p key={index} className="text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            {para}
-          </p>
-        ))}
+        {renderFormattedParagraphs(description, "text-lg leading-8 text-zinc-600 dark:text-zinc-400")}
       </div>
 
 

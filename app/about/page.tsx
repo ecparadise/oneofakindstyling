@@ -4,13 +4,13 @@ import image1 from '../assets/image1.jpeg';
 import image2 from '../assets/image2.jpg';
 import image3 from '../assets/image3.jpeg';
 import image4 from '../assets/image4.jpeg';
+import { renderFormattedParagraphs } from "../helpers/paragraph-formatter";
 
 export default function About() {
-  const paragraphs = about.split("\n");
   const imageSrcArray = [image1, image2, image3, image4];
   return (
     <>
-      <div className="flex flex-col items-center gap-6 text-center">
+      <div className="flex flex-col items-center gap-6 text-center pb-6">
         <h1 className="leading-10 tracking-tight text-black dark:text-zinc-50">
           Meet Abbey
         </h1>
@@ -28,11 +28,7 @@ export default function About() {
             ))}
           </div>
           <div className="flex-1 flex flex-col gap-6 justify-center">
-            {paragraphs.map((para) => (
-              <p key={para.substring(para.length - 3)} className="text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-                {para}
-              </p>
-            ))}
+            {renderFormattedParagraphs(about, "text-lg leading-8 text-zinc-600 dark:text-zinc-400")}
           </div>
         </div>
       </div>
