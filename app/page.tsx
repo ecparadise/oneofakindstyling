@@ -17,8 +17,8 @@ export default function Home() {
         <h1 className="leading-10 tracking-tight text-black dark:text-zinc-50">
           One of a Kind Styling
         </h1>
-        {paragraphs.map((para) => (
-          <p className="text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+        {paragraphs.map((para, index) => (
+          <p key={index} className="text-lg leading-8 text-zinc-600 dark:text-zinc-400">
             {para}
           </p>
         ))}
