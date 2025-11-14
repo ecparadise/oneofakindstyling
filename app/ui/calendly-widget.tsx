@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import { PopupModal, PopupWidget } from "react-calendly"
+import { PopupModal } from "react-calendly"
 
 export default function CalendlyWidget() {
   const [isOpen, setIsOpen] = useState(false);
