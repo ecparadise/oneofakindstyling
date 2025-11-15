@@ -24,4 +24,19 @@ export const customerTestimony = [
     feedback:
       "What can I say… Abbey brings confidence and style that has made me comfortable for many years. She brings a thoughtful approach and understands my unique preferences and personality. I always feel great working with Abbey. And I look good too. Thanks!!!",
   },
+  {
+    name: "Kasey",
+    feedback:
+      "Abbey is the best! I booked a closet consult. She gave me tips on how to best organize my closet, helped me get rid of old clothes, and helped me put together some outfits for my upcoming trip. She is super stylish, kind, and enthusiastic! Would definitely book again.",
+  },
+  {
+    name: "Sarita F",
+    feedback:
+      "I have experienced your ability to listen, really hear me and find fashions that bring out the best of me!",
+  },
+  {
+    name: "Emily T",
+    feedback:
+      "Abbey has such a talent for identifying pieces that I would never normally pick out for myself that looked AMAZING on! Especially being pregnant, I was feeling discouraged about trying on clothes. However, after consulting with Abbey, she has given me hope to find new pieces that make me feel confident, comfortable, and beautiful leaving the house! I can not recommend her services enough.",
+  },
 ];
