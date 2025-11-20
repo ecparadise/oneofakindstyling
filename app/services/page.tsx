@@ -6,6 +6,20 @@ import { isCalendlyUrl } from "../helpers/utils";
 import CalendlyWidget from "../ui/calendly-widget";
 import cx from 'classnames'
 
+interface IServiceType {
+  name: string;
+  cost: string;
+  description?: string;
+  disclaimer?: string;
+  iconName?: string;
+  originalPrice?: string;
+  className?: string;
+  link?: {
+    url: string;
+    text: string;
+  };
+}
+
 export default function Services() {
   return (
     <div>
@@ -17,7 +31,7 @@ export default function Services() {
             <h2 className="text-center mb-6">{heading}</h2>
             <div className={`grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-8 w-full`}>
               {
-                services.map((service) => {
+                services.map((service: IServiceType) => {
                   const { name, cost, description, disclaimer, iconName = '', originalPrice = '', className = '', link } = service;
                   const Icon = iconName ? icons[iconName as keyof typeof icons] : null;
                   return (
