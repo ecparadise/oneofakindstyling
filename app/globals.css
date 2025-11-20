@@ -128,4 +128,9 @@
     @apply text-4xl font-bold;
     font-family: var(--font-title);
   }
+
+  h2 {
+    @apply text-2xl font-bold;
+    font-family: var(--font-title);
+  }
 }

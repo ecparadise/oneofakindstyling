@@ -39,4 +39,9 @@ export const customerTestimony = [
     feedback:
       "Abbey has such a talent for identifying pieces that I would never normally pick out for myself that looked AMAZING on! Especially being pregnant, I was feeling discouraged about trying on clothes. However, after consulting with Abbey, she has given me hope to find new pieces that make me feel confident, comfortable, and beautiful leaving the house! I can not recommend her services enough.",
   },
+  {
+    name: "Mindy",
+    feedback:
+      "I’ve known Abbey for years, so I already trusted her taste—but she still went above and beyond. She helped me pull together the finishing touches for my daughter’s rehearsal dinner outfit, and her eye for detail made all the difference. Her kindness, honesty, and natural sense of style are exactly why I value her opinion. I couldn’t recommend her more",
+  },
 ];
