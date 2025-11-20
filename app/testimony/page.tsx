@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/carousel"
 import { customerTestimony } from "../constants/testimony"
 import FeedbackForm from "../ui/feedback-form"
+import CalendlyWidget from "../ui/calendly-widget"
 
 export default function Testimony() {
   return (
@@ -35,6 +36,7 @@ export default function Testimony() {
         <span className="font-semibold">Have feedback you want to share?</span>
         <FeedbackForm />
       </div>
+      <CalendlyWidget />
     </div >
   )
 }

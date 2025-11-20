@@ -3,21 +3,22 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { PopupModal } from "react-calendly"
+import cx from 'classnames';
 
-export default function CalendlyWidget() {
+export default function CalendlyWidget({ ctaText = 'Book here!', url = 'https://calendly.com/abbeyfodor', className = '' }) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <div>
         <Button
-          className="fixed right-5 bottom-20 z-[9998] rounded-full bg-black text-white p-6 font-semibold"
+          className={cx("fixed right-5 bottom-20 z-[9998] rounded-full bg-black text-white p-6 font-semibold cursor-pointer", className)}
           onClick={() => setIsOpen(true)}
         >
-          Book here!
+          {ctaText}
         </Button>
         {typeof window !== "undefined" && (
           <PopupModal
-            url="https://calendly.com/abbeyfodor"
+            url={url}
             onModalClose={() => setIsOpen(false)}
             open={isOpen}
             rootElement={document.body}

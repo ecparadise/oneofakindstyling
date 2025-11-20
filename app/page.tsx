@@ -2,6 +2,7 @@ import { description } from "./constants/one-of-a-kind";
 import Image from "next/image";
 import clothes from './assets/clothes.jpg';
 import { renderFormattedParagraphs } from "./helpers/paragraph-formatter";
+import CalendlyWidget from "./ui/calendly-widget";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
         </h1>
         {renderFormattedParagraphs(description, "text-lg leading-8 text-zinc-600 dark:text-zinc-400")}
       </div>
-
+      <CalendlyWidget />
 
     </>
   );
