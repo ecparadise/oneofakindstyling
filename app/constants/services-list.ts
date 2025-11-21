@@ -79,6 +79,7 @@ export const servicesList = {
         },
         description:
           "Help ordering from one online retailer of your choice. Based on initial consultation, stylist will curate a personalized selection of items to choose from.",
+        disclaimer: "Must be booked within 3 weeks of initial style consult.",
       },
       {
         name: "Local 1:1 Styling",
