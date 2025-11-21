@@ -11,7 +11,7 @@ export default function CalendlyWidget({ ctaText = 'Book here!', url = 'https://
     <>
       <div>
         <Button
-          className={cx("fixed right-5 bottom-20 z-[9998] rounded-full bg-black text-white p-6 font-semibold cursor-pointer", className)}
+          className={cx("fixed right-5 bottom-23 sm:bottom-20 z-[9998] rounded-full bg-black text-white p-6 font-semibold cursor-pointer", className)}
           onClick={() => setIsOpen(true)}
         >
           {ctaText}
