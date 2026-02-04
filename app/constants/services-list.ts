@@ -1,16 +1,12 @@
 export const servicesList = {
   section1: {
-    heading: "Package Deal: Bundle to Save on Personal Styling",
+    heading: "Special Offers",
     services: [
       {
-        name: "Holiday Special",
-        cost: "$380",
+        name: "Intro Offer",
+        cost: "$600",
         description:
-          "Bundle includes below services:\n-Phone consult\n-In-closet consult (take inventory, share tips, and put together some outfits)\n-Appointment at any local store\n-Order from one website\n-Appointment to unbox, try out, and style or return new pieces",
-        disclaimer:
-          "Must be purchased and used by January 31st. Includes unlimited phone consultations within 30 days of booking.",
-        iconName: "TfiGift",
-        originalPrice: "$555",
+          "Our intro offer is a $600 styling fee, which is inclusive of two in person appointments and unlimited virtual consultations leading up to an event.",
         link: {
           url: "mailto:oneofakindstyling@gmail.com?subject=Holiday%20Special%20Booking%20Request&body=Hi%2C%20I%20am%20interested%20in%20booking%20the%20holiday%20special!",
           text: "Book via email",
