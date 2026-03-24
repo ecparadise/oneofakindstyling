@@ -8,7 +8,7 @@ export const servicesList = {
         description:
           "Our intro offer is a $600 styling fee, which is inclusive of two in person appointments and unlimited virtual consultations leading up to an event",
         link: {
-          url: "mailto:oneofakindstyling@gmail.com?subject=Holiday%20Special%20Booking%20Request&body=Hi%2C%20I%20am%20interested%20in%20booking%20the%20holiday%20special!",
+          url: "mailto:oneofakindstyling@gmail.com?subject=Intro%20Offer%20Booking%20Request&body=Hi%2C%20I%20am%20interested%20in%20booking%20the%20intro%20offer!",
           text: "Book via email",
         },
         className: "md:col-span-2",
@@ -52,6 +52,16 @@ export const servicesList = {
         link: {
           url: "https://calendly.com/abbeyfodor/in-closet-consult",
           text: "Book now",
+        },
+      },
+      {
+        name: "Online Sourcing",
+        cost: "$75",
+        description:
+          "Stylist curates and shares a list of favorite items that fulfill the item request. Links and photos are shared within 48 hours of payment",
+        link: {
+          url: "mailto:oneofakindstyling@gmail.com?subject=Online%20Sourcing%20Booking%20Request&body=Hi%2C%0AI%20am%20interested%20in%20booking%20the%20online%20sourcing%20service!",
+          text: "Book via email",
         },
       },
       // {
