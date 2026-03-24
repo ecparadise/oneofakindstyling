@@ -6,7 +6,7 @@ export const servicesList = {
         name: "Intro Offer",
         cost: "$600",
         description:
-          "Our intro offer is a $600 styling fee, which is inclusive of two in person appointments and unlimited virtual consultations leading up to an event",
+          "Our intro offer is a $600 styling fee, which is inclusive of 2-4 in person appointments (4-5 hours total) and unlimited virtual consultations leading up to an event",
         link: {
           url: "mailto:oneofakindstyling@gmail.com?subject=Intro%20Offer%20Booking%20Request&body=Hi%2C%20I%20am%20interested%20in%20booking%20the%20intro%20offer!",
           text: "Book via email",
