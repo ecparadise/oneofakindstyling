@@ -60,8 +60,8 @@ export const servicesList = {
         description:
           "Stylist curates and shares a list of favorite items that fulfill the item request. Links and photos are shared within 48 hours of payment",
         link: {
-          url: "mailto:oneofakindstyling@gmail.com?subject=Online%20Sourcing%20Booking%20Request&body=Hi%2C%0AI%20am%20interested%20in%20booking%20the%20online%20sourcing%20service!",
-          text: "Book via email",
+          url: "https://calendly.com/abbeyfodor/1-online-order-within-3-weeks-of-initial-style-consult",
+          text: "Book now",
         },
       },
       // {
