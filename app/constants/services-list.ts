@@ -48,7 +48,7 @@ export const servicesList = {
         description:
           "Stylist will meet at the client's closet for outfit planning and helpful tips personalized per person's lifestyle preferences",
         disclaimer:
-          "Client must live within a 30 mile radius of Bridgeport, Connecticut or pay $100 flat fee for long distance travel",
+          "Client must live within a 25 mile radius of Bridgeport, Connecticut or pay $100 flat fee for long distance travel",
         link: {
           url: "https://calendly.com/abbeyfodor/in-closet-consult",
           text: "Book now",
