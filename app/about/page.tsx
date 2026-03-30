@@ -6,6 +6,12 @@ import image3 from '../assets/image3.jpeg';
 import image4 from '../assets/image4.jpeg';
 import { renderFormattedParagraphs } from "../helpers/paragraph-formatter";
 import CalendlyWidget from "../ui/calendly-widget";
+import { Metadata } from "next/dist/lib/metadata/types/metadata-interface";
+
+export const metadata: Metadata = {
+  title: 'About',
+  description: 'Learn about Abbey Fodor, a personal stylist',
+}
 
 export default function About() {
   const imageSrcArray = [image1, image2, image3, image4];

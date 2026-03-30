@@ -17,8 +17,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "One of a Kind Styling",
+  title: {
+    default: "One of a Kind Styling",
+    template: '%s | One of a Kind Styling'
+  },
   description: "Personalized styling services to elevate your wardrobe and confidence.",
+  keywords: ['personal stylist Connecticut', 'styling services CT', 'wardrobe consultation'],
+  openGraph: {
+    title: 'One of a Kind Styling',
+    description: 'Personalized styling services to elevate your wardrobe and confidence.',
+    url: 'https://oneofakindstyling.vercel.app/',
+    siteName: 'One of a Kind Styling',
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({

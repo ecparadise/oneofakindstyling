@@ -9,6 +9,12 @@ import {
 import { customerTestimony } from "../constants/testimony"
 import FeedbackForm from "../ui/feedback-form"
 import CalendlyWidget from "../ui/calendly-widget"
+import { Metadata } from "next/dist/lib/metadata/types/metadata-interface"
+
+export const metadata: Metadata = {
+  title: 'Testimony',
+  description: 'Read testimony and submit feedback',
+}
 
 export default function Testimony() {
   return (

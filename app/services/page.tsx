@@ -5,6 +5,12 @@ import * as icons from "react-icons/tfi";
 import { isCalendlyUrl } from "../helpers/utils";
 import CalendlyWidget from "../ui/calendly-widget";
 import cx from 'classnames'
+import { Metadata } from "next/dist/lib/metadata/types/metadata-interface";
+
+export const metadata: Metadata = {
+  title: 'Services',
+  description: 'Learn about and book available styling services',
+}
 
 interface IServiceType {
   name: string;
