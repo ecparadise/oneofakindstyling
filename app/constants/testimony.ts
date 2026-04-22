@@ -44,4 +44,9 @@ export const customerTestimony = [
     feedback:
       "I’ve known Abbey for years, so I already trusted her taste—but she still went above and beyond. She helped me pull together the finishing touches for my daughter’s rehearsal dinner outfit, and her eye for detail made all the difference. Her kindness, honesty, and natural sense of style are exactly why I value her opinion. I couldn’t recommend her more",
   },
+  {
+    name: "Kerri W",
+    feedback:
+      "Well, that was easy. Abbey came to my home this morning and within an hour she pretty much coordinated a number of outfits and figured out where my gaps were. It seemed effortless. Looking forward to seeing what she recommends.",
+  },
 ];
