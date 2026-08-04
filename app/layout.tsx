@@ -45,12 +45,12 @@ export default function RootLayout({
         <meta name="fo-verify" content="4d13a95b-b435-4eb7-887f-223750de7be9" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#fbf8f3] dark:bg-black`}
       >
        <Analytics />
         <Menu />
         <div className="flex min-h-screen items-center justify-center font-body">
-          <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-16 px-16 bg-white dark:bg-black xs:items-start">
+          <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-16 px-16 xs:items-start">
             <div className="pb-12 md:pb-0">
               {children}
             </div>

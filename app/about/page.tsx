@@ -17,10 +17,11 @@ export default function About() {
   const imageSrcArray = [image1, image2, image3, image4];
   return (
     <>
-      <div className="flex flex-col items-center gap-6 text-center pb-6">
-        <h1 className="leading-10 tracking-tight text-black dark:text-zinc-50">
+      <div className="flex flex-col pb-6">
+        <h1 className="leading-10 text-black dark:text-zinc-50 mb-2" style={{ fontFamily: 'Georgia, "Times New Roman", serif', letterSpacing: '1px', fontWeight: 400 }}>
           Meet Abbey
         </h1>
+        <hr className="header-rule" />
         <div className="flex flex-col md:flex-row gap-10">
           <div className="flex-1 flex md:flex-col items-center justify-between">
             {imageSrcArray.map((src, index) => (
@@ -34,7 +35,7 @@ export default function About() {
               />
             ))}
           </div>
-          <div className="flex-1 flex flex-col gap-6 justify-center">
+          <div className="flex-1 flex flex-col gap-6 justify-center" style={{ fontFamily: 'Arial, Helvetica, sans-serif' }}>
             {renderFormattedParagraphs(about, "text-lg leading-8 text-zinc-600 dark:text-zinc-400")}
           </div>
         </div>

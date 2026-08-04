@@ -3,6 +3,17 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* StylingRates typography system */
+:root {
+  --font-serif-primary: Georgia, 'Times New Roman', serif;
+  --font-sans-primary: Arial, Helvetica, sans-serif;
+  --color-text-primary: #211C18;
+  --color-text-accent: #7A2E2E;
+  --color-text-muted: #5B5148;
+  --color-text-secondary: #8A7F70;
+  --color-text-tertiary: #4A4038;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -122,15 +133,39 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans-primary);
   }
 
   h1 {
-    @apply text-4xl font-bold;
-    font-family: var(--font-title);
+    @apply text-4xl font-normal;
+    font-family: var(--font-serif-primary);
+    letter-spacing: 1px;
+    color: var(--color-text-primary);
   }
 
   h2 {
-    @apply text-2xl font-bold;
-    font-family: var(--font-title);
+    @apply text-2xl font-normal;
+    font-family: var(--font-serif-primary);
+    letter-spacing: 0.5px;
+    color: var(--color-text-primary);
+  }
+
+  h3 {
+    font-family: var(--font-serif-primary);
+    letter-spacing: 0.3px;
+    color: var(--color-text-primary);
+  }
+
+  p {
+    font-family: var(--font-sans-primary);
+    line-height: 1.5;
+  }
+
+  /* Global utility classes */
+  .header-rule {
+    border: none;
+    border-top: 1px solid #211C18;
+    margin: 0 0 26px 0;
+    width: 100%;
   }
 }

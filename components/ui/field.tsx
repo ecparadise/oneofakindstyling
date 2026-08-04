@@ -31,11 +31,12 @@ function FieldLegend({
       data-slot="field-legend"
       data-variant={variant}
       className={cn(
-        "mb-3 font-medium",
+        "mb-3 font-normal",
         "data-[variant=legend]:text-base",
         "data-[variant=label]:text-sm",
         className
       )}
+      style={{ fontFamily: 'Georgia, "Times New Roman", serif', letterSpacing: '0.5px' }}
       {...props}
     />
   )
@@ -130,9 +131,10 @@ function FieldTitle({ className, ...props }: React.ComponentProps<"div">) {
     <div
       data-slot="field-label"
       className={cn(
-        "flex w-fit items-center gap-2 text-sm leading-snug font-medium group-data-[disabled=true]/field:opacity-50",
+        "flex w-fit items-center gap-2 text-sm leading-snug font-normal group-data-[disabled=true]/field:opacity-50",
         className
       )}
+      style={{ fontFamily: 'Arial, Helvetica, sans-serif', letterSpacing: '0.3px' }}
       {...props}
     />
   )
@@ -143,11 +145,12 @@ function FieldDescription({ className, ...props }: React.ComponentProps<"p">) {
     <p
       data-slot="field-description"
       className={cn(
-        "text-muted-foreground text-sm leading-normal font-normal group-has-[[data-orientation=horizontal]]/field:text-balance",
+        "text-sm leading-normal font-normal group-has-[[data-orientation=horizontal]]/field:text-balance",
         "last:mt-0 nth-last-2:-mt-1 [[data-variant=legend]+&]:-mt-1.5",
         "[&>a:hover]:text-primary [&>a]:underline [&>a]:underline-offset-4",
         className
       )}
+      style={{ fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '10px', color: '#8A7F70', fontStyle: 'italic', lineHeight: '1.5' }}
       {...props}
     />
   )
@@ -227,6 +230,7 @@ function FieldError({
       role="alert"
       data-slot="field-error"
       className={cn("text-destructive text-sm font-normal", className)}
+      style={{ fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '11px', lineHeight: '1.5' }}
       {...props}
     >
       {content}

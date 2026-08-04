@@ -18,8 +18,8 @@ export default function Menu() {
     setSelectedPath(pathname);
   }, [pathname]);
   return (
-    <div className="w-full flex justify-center border-b fixed top-0 z-10 bg-white">
-      <NavigationMenu className='list-none'>
+    <div className="w-full flex justify-center border-b fixed top-0 z-50" style={{ fontFamily: 'Arial, Helvetica, sans-serif', backgroundColor: '#fbf8f3', opacity: 1 }}>
+      <NavigationMenu className='list-none' style={{ backgroundColor: '#fbf8f3' }}>
         {menuItems.map((item) => {
           const { name, href } = item;
           return (
@@ -27,7 +27,13 @@ export default function Menu() {
               <NavigationMenuLink
                 asChild
                 active={selectedPath === href}
-                className={`${navigationMenuTriggerStyle()} ${selectedPath === href ? 'font-bold underline underline-offset-8' : ''}`}
+                className={`${navigationMenuTriggerStyle()} ${selectedPath === href ? 'font-normal underline underline-offset-8' : 'font-normal'}`}
+                style={{ 
+                  letterSpacing: '0.3px', 
+                  backgroundColor: '#fbf8f3',
+                  color: 'black',
+                  textDecorationColor: selectedPath === href ? '#7a2e2e' : 'transparent'
+                }}
               >
                 <Link href={href}>{name}</Link>
               </NavigationMenuLink>

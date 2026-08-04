@@ -102,3 +102,19 @@ export const servicesList = {
     ],
   },
 };
+
+interface Tier {
+  name: string;
+  meta?: string;
+  price: string;
+  description: string;
+}
+
+export const tiers: Tier[] = [
+  { name: 'Single Outfit', meta: '45–60 min', price: '$200', description: 'Entry-level, low-commitment session for new clients. One outfit for one specific occasion, built primarily from your existing closet plus 1–2 targeted new pieces.' },
+  { name: 'Signature Styling Session', meta: '1.5–2 hrs', price: '$350', description: 'Full head-to-toe outfit build for a specific occasion. The same process as a Single Outfit session, with more time and resources devoted to getting every detail right.' },
+  { name: 'Closet Audit + Restyle', price: '$550–$650', description: 'A deeper appointment focused on what you already own — sorted, edited, and rebuilt into 3–5 complete outfits in a single session.' },
+  { name: 'Occasion Package', meta: 'multi-look event prep', price: '$800–$1,000', description: 'For weddings, milestone birthdays, a big work trip, or a full week of events. A series of 2–4 appointments, plus shopping and pickup time between sessions.' },
+  { name: 'Ongoing Client Retainer', meta: '12-week minimum', price: '$100 / wk', description: 'A recurring relationship with a dedicated stylist. Priority appointments every two weeks, seasonal wardrobe check-ins, and on-call texts for "what do I wear to X."' },
+  { name: 'VIP / Full Wardrobe Overhaul', price: 'from $1,200', description: 'A multi-session deep engagement: closet audit, seasonal capsule build, personal shopping trip, and ongoing support over several months. Reserved for a few select clients per season.' },
+];
